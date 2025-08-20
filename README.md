@@ -9,7 +9,7 @@ This repository contains the codebase for investigating Oxford Nanopore basecall
 
 The work investigates the sequence context hypothesis - that standard 10,000-sample chunking may limit complete sequence representation during training for longer repeat expansions. Through systematic analysis of training data integrity and custom chunk size implementation, we explored whether providing complete sequence context during training could improve repeat expansion basecalling.
 
-Results showed improvements in repeat length accuracy (5-36 percentage points) and sequence purity (99.41-100.00%) whilst maintaining standard genomic performance within 1.0% of baseline, suggesting that sequence context during training may influence repeat enumeration accuracy.
+Results showed improvements in repeat length accuracy (5-36 percentage points) and sequence purity (99.41-100.00%) on the datasets tested on, whilst maintaining accuracy on standard, genome-wide datasets (HG002) within 1.0% of baseline, suggesting that sequence context during training may influence repeat enumeration accuracy.
 
 ## 1. Standard Genome Processing (HG002)
 
